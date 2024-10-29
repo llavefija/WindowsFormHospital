@@ -46,30 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pacientes\BusquedaPacientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pacientes\BusquedaPacientes.Designer.cs">
+      <DependentUpon>BusquedaPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hospital.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hospital.Designer.cs">
       <DependentUpon>Hospital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacientes.cs">
+    <Compile Include="Pacientes\ModificarPacientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pacientes\ModificarPacientes.Designer.cs">
+      <DependentUpon>ModificarPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacientes.Designer.cs">
+    <Compile Include="Pacientes\Pacientes.Designer.cs">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonalAdministrativo.cs">
+    <Compile Include="Pacientes\PacientesClase.cs" />
+    <Compile Include="Personal\Administracion\AdministracionClase.cs" />
+    <Compile Include="Personal\Administracion\PersonalAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonalAdministrativo.Designer.cs">
+    <Compile Include="Personal\Administracion\PersonalAdministrativo.Designer.cs">
       <DependentUpon>PersonalAdministrativo.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonalSanitario.cs">
+    <Compile Include="Personal\PersonalClase.cs" />
+    <Compile Include="Personal\Sanitarios\PersonalSanitario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonalSanitario.Designer.cs">
+    <Compile Include="Personal\Sanitarios\PersonalSanitario.Designer.cs">
       <DependentUpon>PersonalSanitario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personal\Sanitarios\SanitariosClase.cs" />
+    <Compile Include="PersonasClase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Visualizar.cs">
@@ -78,16 +95,22 @@
     <Compile Include="Visualizar.Designer.cs">
       <DependentUpon>Visualizar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pacientes\BusquedaPacientes.resx">
+      <DependentUpon>BusquedaPacientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hospital.resx">
       <DependentUpon>Hospital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacientes.resx">
+    <EmbeddedResource Include="Pacientes\ModificarPacientes.resx">
+      <DependentUpon>ModificarPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes\Pacientes.resx">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonalAdministrativo.resx">
+    <EmbeddedResource Include="Personal\Administracion\PersonalAdministrativo.resx">
       <DependentUpon>PersonalAdministrativo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonalSanitario.resx">
+    <EmbeddedResource Include="Personal\Sanitarios\PersonalSanitario.resx">
       <DependentUpon>PersonalSanitario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

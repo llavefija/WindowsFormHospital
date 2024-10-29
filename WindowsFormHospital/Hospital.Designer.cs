@@ -178,8 +178,8 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(682, 453);
             this.Controls.Add(this.labelHospital);
-            this.Controls.Add(this.PanelGestion);
             this.Controls.Add(this.PanelMenu);
+            this.Controls.Add(this.PanelGestion);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Hospital";
